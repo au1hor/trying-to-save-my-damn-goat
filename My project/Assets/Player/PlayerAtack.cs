@@ -10,14 +10,12 @@ public class PlayerAtack : MonoBehaviour
     public Vector3 enemieLocation;
     public Vector3 targetPosition;
      void DashAtack(GameObject Enemie){
-       StartCoroutine(Dashit());
+       StartCoroutine(Dashit(enemie.transform));
     }
-    IEnumerator Dashit(){
-        enemieLocation = enemie.transform.position;
+    IEnumerator Dashit(Transform pos){
         Vector3 startPosition = transform.position;
         float timer = 0;
-        Vector3 dist = startPosition -enemieLocation;
-        targetPosition = enemieLocation - dist;
+        targetPosition = pos.position;
         playerMove.canMove = false;
         while (timer < duration)
         {
