@@ -225,7 +225,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 12
+  orthographic size: 4
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -249,7 +249,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -266,6 +266,7 @@ GameObject:
   m_Component:
   - component: {fileID: 611631312}
   - component: {fileID: 611631311}
+  - component: {fileID: 611631314}
   - component: {fileID: 611631310}
   - component: {fileID: 611631313}
   m_Layer: 0
@@ -422,6 +423,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &611631314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 611631309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1622b4985f141077b5e981f3c91c1f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::enemieBehaviour
+  life: 0
+  rb: {fileID: 611631313}
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -541,7 +556,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMove
   inputMove: {x: 0, y: 0}
   MoveSpeed: 20
-  canMove: 0
+  canMove: 1
 --- !u!212 &2006689244
 SpriteRenderer:
   serializedVersion: 2
@@ -591,7 +606,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 5224837830077223733, guid: e5b69649753a59a39bf028cf72195c10, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -654,7 +669,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.625, y: 1}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -706,11 +721,13 @@ MonoBehaviour:
   enemie: {fileID: 611631309}
   enemieLocation: {x: 0, y: 0, z: 0}
   targetPosition: {x: 0, y: 0, z: 0}
+  forceKb: 2
+  atackDash: {fileID: 2844469710593603471, guid: 2271b1a447cea4e9593ef8fb34ee2c86, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 519420032}
   - {fileID: 619394802}
+  - {fileID: 519420032}
   - {fileID: 2006689245}
   - {fileID: 611631312}

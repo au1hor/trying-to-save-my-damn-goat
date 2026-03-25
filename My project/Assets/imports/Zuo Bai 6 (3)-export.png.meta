@@ -1,0 +1,330 @@
+fileFormatVersion: 2
+guid: 005bdd3dcc6402e639a043c051db0ce6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6802636254746970204
+    second: Zuo Bai 6 (3)-export_0
+  - first:
+      213: 1404796636319318817
+    second: Zuo Bai 6 (3)-export_1
+  - first:
+      213: 1008650189216979789
+    second: Zuo Bai 6 (3)-export_2
+  - first:
+      213: 8581008267911087409
+    second: Zuo Bai 6 (3)-export_3
+  - first:
+      213: 713974072243169337
+    second: Zuo Bai 6 (3)-export_4
+  - first:
+      213: -8213205498880850599
+    second: Zuo Bai 6 (3)-export_5
+  - first:
+      213: -4140890817898199677
+    second: Zuo Bai 6 (3)-export_6
+  - first:
+      213: -303332440612596481
+    second: Zuo Bai 6 (3)-export_7
+  - first:
+      213: 7214444514826965025
+    second: Zuo Bai 6 (3)-export_8
+  - first:
+      213: 6299556462751265845
+    second: Zuo Bai 6 (3)-export_9
+  - first:
+      213: 6913862655881249160
+    second: Zuo Bai 6 (3)-export_10
+  - first:
+      213: -3478635326137621834
+    second: Zuo Bai 6 (3)-export_11
+  - first:
+      213: -2639296926932303316
+    second: Zuo Bai 6 (3)-export_12
+  - first:
+      213: -2467175884293852012
+    second: Zuo Bai 6 (3)-export_13
+  - first:
+      213: 687204737453368226
+    second: Zuo Bai 6 (3)-export_14
+  - first:
+      213: -6936100187986372376
+    second: Zuo Bai 6 (3)-export_15
+  - first:
+      213: -295635031447554262
+    second: Zuo Bai 6 (3)-export_16
+  - first:
+      213: -2702451196712121547
+    second: Zuo Bai 6 (3)-export_17
+  - first:
+      213: 2871384110475010999
+    second: Zuo Bai 6 (3)-export_18
+  - first:
+      213: 4869330279837409025
+    second: Zuo Bai 6 (3)-export_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Zuo Bai 6 (3)-export_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 260
+        width: 220
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a7fc934e5e2891a0800000000000000
+      internalID: -6802636254746970204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zuo Bai 6 (3)-export_1
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 260
+        width: 220
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1230a790917de7310800000000000000
+      internalID: 1404796636319318817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zuo Bai 6 (3)-export_2
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 132
+        width: 220
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4b98e6c0027ffd00800000000000000
+      internalID: 1008650189216979789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zuo Bai 6 (3)-export_3
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 130
+        width: 220
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 135c7873e8dd51770800000000000000
+      internalID: 8581008267911087409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zuo Bai 6 (3)-export_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 220
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 938a4eac2ab88e900800000000000000
+      internalID: 713974072243169337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Zuo Bai 6 (3)-export_5
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 0
+        width: 220
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9550ceb3d15d40e80800000000000000
+      internalID: -8213205498880850599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: fc9c4beae0ac8f57aa0d7217eb9f1c9c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":220.0,"y":130.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Zuo Bai 6 (3)-export_0: -6802636254746970204
+      Zuo Bai 6 (3)-export_1: 1404796636319318817
+      Zuo Bai 6 (3)-export_2: 1008650189216979789
+      Zuo Bai 6 (3)-export_3: 8581008267911087409
+      Zuo Bai 6 (3)-export_4: 713974072243169337
+      Zuo Bai 6 (3)-export_5: -8213205498880850599
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
