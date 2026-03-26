@@ -35,19 +35,22 @@ public class AniDashAtack : MonoBehaviour
     }
     IEnumerator AnimationDaAtack(){
         Rotation();
-        GetDamage(forceKb,1,direction);
+       
         yield return new WaitForSeconds(0.05f);
         while(true){
              if (indice >= sprsDashAtack.Length )
             {
-                Debug.Log("deleta sa merda");
-                Destroy(this.gameObject);
-                
+                Destroy(this.gameObject);   
                 break;
+            }else if (indice == 2)
+            {
+                 GetDamage(forceKb,1,direction);
             }
             spriteRenderer.sprite = sprsDashAtack[indice];
             yield return new WaitForSeconds(castTime);
             indice ++;
+            
         }
+       
     }
 }
