@@ -34,7 +34,7 @@ public class AniDashAtack : MonoBehaviour
         transform.rotation = Quaternion.Euler(0,0,angle - 90f);
     }
     IEnumerator AnimationDaAtack(){
-        Rotation();
+       Rotation();
        
         yield return new WaitForSeconds(0.05f);
         while(true){

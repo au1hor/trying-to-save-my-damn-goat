@@ -1,5 +1,5 @@
 using System.Collections;
-using Unity.Mathematics;
+
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -12,7 +12,11 @@ public class PlayerAtack : MonoBehaviour
     public Vector3 targetPosition;
     public float forceKb = 10;
     // animations atacks
+    // prefabs
     public GameObject atackDash;
+    public GameObject baseAtck;
+    //
+
      void DashAtack(GameObject Enemie){
        StartCoroutine(Dashit(enemie.transform));
     }
@@ -36,7 +40,7 @@ public class PlayerAtack : MonoBehaviour
         playerMove.canMove = true;
     }
     public void AtackDashInst(GameObject target){
-        GameObject atackDs = Instantiate(atackDash,targetPosition,quaternion.identity);
+        GameObject atackDs = Instantiate(atackDash,targetPosition,Quaternion.identity);
         Vector2 direction =targetPosition - transform.position;
         atackDs.GetComponent<AniDashAtack>().forceKb = forceKb;
         atackDs.GetComponent<AniDashAtack>().direction = direction.normalized;
@@ -45,9 +49,19 @@ public class PlayerAtack : MonoBehaviour
 
         
     }
+    public void atackBase(){
+        Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector3 dir = (transform.position- mousePos);
+        float angle = Mathf.Atan2(dir.y,dir.x) * Mathf.Rad2Deg;
+        GameObject baseAtack = Instantiate(baseAtck,this.transform.position + new Vector3(0,1f,0),Quaternion.Euler(0,0,angle- 90f));
+    }
     public void Update(){
-        if(Input.GetMouseButtonDown(0)){
+        Debug.Log(Camera.main.ScreenToWorldPoint(Input.mousePosition));
+        if(Input.GetMouseButtonDown(1)){
             DashAtack(enemie);
+        }
+         if(Input.GetMouseButtonDown(0)){
+            atackBase();
         }
     }
     

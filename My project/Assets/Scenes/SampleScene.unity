@@ -437,6 +437,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::enemieBehaviour
   life: 0
   rb: {fileID: 611631313}
+  linVel: {x: 0, y: 0}
+  duration: 0.3
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -721,8 +723,9 @@ MonoBehaviour:
   enemie: {fileID: 611631309}
   enemieLocation: {x: 0, y: 0, z: 0}
   targetPosition: {x: 0, y: 0, z: 0}
-  forceKb: 2
+  forceKb: 0
   atackDash: {fileID: 2844469710593603471, guid: 2271b1a447cea4e9593ef8fb34ee2c86, type: 3}
+  baseAtck: {fileID: 8767114220095508075, guid: 6d38a3f9fe61e2659b9d790381f09ed4, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2844469710593603471
+--- !u!1 &8767114220095508075
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,23 +8,23 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8340636903002877883}
-  - component: {fileID: 8584822432887922080}
-  - component: {fileID: 4038929819934499848}
+  - component: {fileID: 4838965851719015305}
+  - component: {fileID: 9088422251678934171}
+  - component: {fileID: 7407346229637050803}
   m_Layer: 0
-  m_Name: DashAtack
+  m_Name: BaseAtack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8340636903002877883
+--- !u!4 &4838965851719015305
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2844469710593603471}
+  m_GameObject: {fileID: 8767114220095508075}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -33,14 +33,14 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &8584822432887922080
+--- !u!212 &9088422251678934171
 SpriteRenderer:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2844469710593603471}
+  m_GameObject: {fileID: 8767114220095508075}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -82,39 +82,34 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -1176599323043143983, guid: baa63379b6473f549a5a829ac6adea44, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
-  m_FlipY: 1
+  m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 6.875, y: 4.0625}
+  m_Size: {x: 2.2, y: 1.09}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!114 &4038929819934499848
+--- !u!114 &7407346229637050803
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2844469710593603471}
+  m_GameObject: {fileID: 8767114220095508075}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 087d9e7612969523da27825dbc8fa573, type: 3}
+  m_Script: {fileID: 11500000, guid: b15f7e832bc6d5f47a129758433d7efa, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AniDashAtack
-  player: {fileID: 0}
-  direction: {x: 0, y: 0}
-  forceKb: 0
-  spriteRenderer: {fileID: 8584822432887922080}
-  sprsDashAtack:
-  - {fileID: -6802636254746970204, guid: 005bdd3dcc6402e639a043c051db0ce6, type: 3}
-  - {fileID: 1404796636319318817, guid: 005bdd3dcc6402e639a043c051db0ce6, type: 3}
-  - {fileID: 1008650189216979789, guid: 005bdd3dcc6402e639a043c051db0ce6, type: 3}
-  - {fileID: 8581008267911087409, guid: 005bdd3dcc6402e639a043c051db0ce6, type: 3}
-  - {fileID: 713974072243169337, guid: 005bdd3dcc6402e639a043c051db0ce6, type: 3}
-  - {fileID: -8213205498880850599, guid: 005bdd3dcc6402e639a043c051db0ce6, type: 3}
-  indice: 0
-  castTime: 0.05
-  target: {fileID: 0}
+  m_EditorClassIdentifier: Assembly-CSharp::AtackBaseAni
+  sprites:
+  - {fileID: -1176599323043143983, guid: baa63379b6473f549a5a829ac6adea44, type: 3}
+  - {fileID: 9088008092898547554, guid: baa63379b6473f549a5a829ac6adea44, type: 3}
+  - {fileID: 1675376363416838972, guid: baa63379b6473f549a5a829ac6adea44, type: 3}
+  - {fileID: -6771534838342274507, guid: baa63379b6473f549a5a829ac6adea44, type: 3}
+  - {fileID: -158342259199803819, guid: baa63379b6473f549a5a829ac6adea44, type: 3}
+  - {fileID: 4402502575037894610, guid: baa63379b6473f549a5a829ac6adea44, type: 3}
+  casTime: 0.05
+  srprR: {fileID: 9088422251678934171}
