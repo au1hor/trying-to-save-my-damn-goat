@@ -19,7 +19,7 @@ public class AniDashAtack : MonoBehaviour
           
     }
     public void GetDamage(float force, float damage , Vector2 direction){
-        target.GetComponent<enemieBehaviour>().GetDamage(force,damage,direction);
+        target.GetComponent<EnemieBehaviour>().GetDamage(force,damage,direction);
     }
     public void InstAnimation(){
         if(dashAtackAnim != null){

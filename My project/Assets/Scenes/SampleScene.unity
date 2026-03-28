@@ -225,7 +225,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 4
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -271,7 +271,7 @@ GameObject:
   - component: {fileID: 611631313}
   m_Layer: 0
   m_Name: Enemie
-  m_TagString: Untagged
+  m_TagString: enemie
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -391,7 +391,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.8159, y: 1.6001, z: 0}
-  m_LocalScale: {x: 0.35185352, y: 0.3801, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -439,6 +439,14 @@ MonoBehaviour:
   rb: {fileID: 611631313}
   linVel: {x: 0, y: 0}
   duration: 0.3
+  sprRender: {fileID: 611631311}
+  player: {fileID: 2006689242}
+  dist: 0
+  rangeChase: 3
+  rangeAtack: 1
+  speed: 0.01
+  canChangeState: 1
+  state: 0
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -539,7 +547,7 @@ GameObject:
   - component: {fileID: 2006689246}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -671,7 +679,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.625, y: 1}
+    oldSize: {x: 1.25, y: 2}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -723,6 +731,7 @@ MonoBehaviour:
   enemie: {fileID: 611631309}
   enemieLocation: {x: 0, y: 0, z: 0}
   targetPosition: {x: 0, y: 0, z: 0}
+  distanceBsAtack: 2
   forceKb: 0
   atackDash: {fileID: 2844469710593603471, guid: 2271b1a447cea4e9593ef8fb34ee2c86, type: 3}
   baseAtck: {fileID: 8767114220095508075, guid: 6d38a3f9fe61e2659b9d790381f09ed4, type: 3}

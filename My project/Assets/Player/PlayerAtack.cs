@@ -10,6 +10,7 @@ public class PlayerAtack : MonoBehaviour
     public GameObject enemie;
     public Vector3 enemieLocation;
     public Vector3 targetPosition;
+    public float distanceBsAtack = 2f;
     public float forceKb = 10;
     // animations atacks
     // prefabs
@@ -46,22 +47,20 @@ public class PlayerAtack : MonoBehaviour
         atackDs.GetComponent<AniDashAtack>().direction = direction.normalized;
         atackDs.GetComponent<AniDashAtack>().target = enemie;
         atackDs.GetComponent<AniDashAtack>().player = this.gameObject;
-
-        
     }
-    public void atackBase(){
+    public void AtackBase(){
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         Vector3 dir = (transform.position- mousePos);
         float angle = Mathf.Atan2(dir.y,dir.x) * Mathf.Rad2Deg;
-        GameObject baseAtack = Instantiate(baseAtck,this.transform.position + new Vector3(0,1f,0),Quaternion.Euler(0,0,angle- 90f));
+        Vector2 spawnPos = this.transform.position - dir.normalized * distanceBsAtack;
+        GameObject baseAtack = Instantiate(baseAtck,spawnPos,Quaternion.Euler(0,0,angle- 90f));
     }
     public void Update(){
-        Debug.Log(Camera.main.ScreenToWorldPoint(Input.mousePosition));
         if(Input.GetMouseButtonDown(1)){
             DashAtack(enemie);
         }
          if(Input.GetMouseButtonDown(0)){
-            atackBase();
+            AtackBase();
         }
     }
     
